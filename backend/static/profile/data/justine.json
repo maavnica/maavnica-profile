@@ -51,7 +51,8 @@
       "label": "Voir le CV",
       "href": "/static/profile/cv/justine-vaillard-cv.pdf",
       "style": "quiet",
-      "download": true,
+      "download": "justine-vaillard-cv.pdf",
+      "external": true,
       "title": "CV PDF — version détaillée"
     }
   ],

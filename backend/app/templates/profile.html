@@ -94,7 +94,7 @@
               class="btn btn--{{ link.style }} js-track"
               href="{{ link.href }}"
               {% if link.external %}target="_blank" rel="noopener noreferrer"{% endif %}
-              {% if link.download %}download{% endif %}
+              {% if link.download is sameas true %}download{% elif link.download %}download="{{ link.download }}"{% endif %}
               {% if link.title %}title="{{ link.title }}"{% endif %}
               >{{ link.label }}</a
             >
