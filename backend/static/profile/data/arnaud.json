@@ -78,27 +78,27 @@
     ]
   },
   "milestones": {
-    "title": "Parcours",
+    "title": "Parcours en clair",
+    "style": "narrative",
+    "kicker": "Ce qui guide mon travail",
     "items": [
       {
-        "when": "2023 — auj.",
-        "title": "Maavnica",
-        "detail": "SmartCard, PayLink, profils vivants, automatisation légère"
+        "title": "Construire des outils utiles",
+        "detail": "Maavnica, SmartCard, PayLink — des produits pensés pour le terrain, pas pour les slides."
       },
       {
-        "when": "Avant",
-        "title": "Relation client & outils métiers",
-        "detail": "CRM, suivi client, processus terrain"
+        "title": "Relation client & écoute",
+        "detail": "Comprendre avant de livrer : comptes sensibles, reformulation, suivi honnête."
       },
       {
-        "when": "Fil conducteur",
-        "title": "Produit utile, pas gadget",
-        "detail": "Écoute, clarté, déploiement progressif"
+        "title": "Automatisation légère",
+        "detail": "CRM, processus, profils vivants — simplifier sans déshumaniser."
       }
     ]
   },
   "projects": {
-    "title": "Projets",
+    "title": "Ce que je construis",
+    "kicker": "Sur le terrain",
     "items": [
       {
         "title": "SmartCard",
@@ -135,7 +135,7 @@
     ]
   },
   "availability": {
-    "title": "Disponibilités",
+    "title": "Disponible pour",
     "items": [
       {
         "label": "Échange produit & partenariats",
@@ -150,5 +150,5 @@
     ],
     "note": "Un message suffit pour voir si on avance ensemble."
   },
-  "footer": { "label": "Maavnica Profile · V0" }
+  "footer": { "label": "Maavnica Profile · V0.5" }
 }

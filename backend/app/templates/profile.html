@@ -104,6 +104,7 @@
 
       <main id="contenu-principal" class="dashboard">
         <div class="dashboard__row">
+          {% if profile.quotes %}
           <section class="panel card" aria-labelledby="reco-title">
             <header class="panel__head">
               <div class="panel__head-row">
@@ -125,15 +126,26 @@
               {% endfor %}
             </ul>
           </section>
+          {% endif %}
 
+          {% if profile.milestones %}
           <section class="panel card" aria-labelledby="parcours-title">
             <header class="panel__head">
-              <h2 id="parcours-title">{{ profile.milestones.title }}</h2>
+              <div class="panel__head-row">
+                <h2 id="parcours-title">{{ profile.milestones.title }}</h2>
+                {% if profile.milestones.kicker %}
+                <span class="panel__kicker">{{ profile.milestones.kicker }}</span>
+                {% endif %}
+              </div>
             </header>
-            <ol class="milestones">
+            <ol
+              class="milestones{% if profile.milestones.get('style') == 'narrative' %} milestones--narrative{% endif %}"
+            >
               {% for m in profile.milestones['items'] %}
               <li class="milestone">
+                {% if m.when and profile.milestones.get('style') != 'narrative' %}
                 <span class="milestone__when">{{ m.when }}</span>
+                {% endif %}
                 <div class="milestone__body">
                   <strong>{{ m.title }}</strong>
                   <span class="milestone__detail subtle">{{ m.detail }}</span>
@@ -142,28 +154,55 @@
               {% endfor %}
             </ol>
           </section>
+          {% endif %}
         </div>
 
         <div class="dashboard__row">
+          {% if profile.signals %}
+          <section class="panel card" aria-labelledby="signals-title">
+            <header class="panel__head">
+              <div class="panel__head-row">
+                <h2 id="signals-title">{{ profile.signals.title }}</h2>
+                {% if profile.signals.kicker %}
+                <span class="panel__kicker">{{ profile.signals.kicker }}</span>
+                {% endif %}
+              </div>
+            </header>
+            <ul class="signals">
+              {% for s in profile.signals['items'] %}
+              <li class="signal">{{ s.label }}</li>
+              {% endfor %}
+            </ul>
+          </section>
+          {% elif profile.projects %}
           <section class="panel card" aria-labelledby="projets-title">
             <header class="panel__head">
-              <h2 id="projets-title">{{ profile.projects.title }}</h2>
+              <div class="panel__head-row">
+                <h2 id="projets-title">{{ profile.projects.title }}</h2>
+                {% if profile.projects.kicker %}
+                <span class="panel__kicker">{{ profile.projects.kicker }}</span>
+                {% endif %}
+              </div>
             </header>
             <div class="capsules">
               {% for p in profile.projects['items'] %}
               <article class="capsule">
+                {% if p.chips %}
                 <div class="capsule__top">
                   {% for chip in p.chips %}
                   <span class="chip chip--{{ chip.variant }}">{{ chip.label }}</span>
                   {% endfor %}
                 </div>
+                {% endif %}
                 <h3>{{ p.title }}</h3>
                 <p class="capsule__desc subtle">{{ p.description }}</p>
               </article>
               {% endfor %}
             </div>
           </section>
+          {% endif %}
 
+          {% if profile.availability %}
           <section class="panel card" aria-labelledby="dispo-title">
             <header class="panel__head">
               <h2 id="dispo-title">{{ profile.availability.title }}</h2>
@@ -180,6 +219,7 @@
             <p class="dispo__note subtle">{{ profile.availability.note }}</p>
             {% endif %}
           </section>
+          {% endif %}
         </div>
       </main>
 

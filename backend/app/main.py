@@ -17,7 +17,11 @@ DATA_DIR = (PROFILE_DIR / "data").resolve()
 TEMPLATES = Jinja2Templates(directory=str(APP_DIR / "templates"))
 
 SLUG_RE = re.compile(r"^[a-z0-9-]+$")
-KNOWN_SLUGS = ("arnaud", "terapeuta", "designer", "consultant")
+
+
+def known_slugs() -> tuple[str, ...]:
+    return tuple(sorted(p.stem for p in DATA_DIR.glob("*.json")))
+
 
 app = FastAPI(
     title="Maavnica Profile",
@@ -48,7 +52,7 @@ async def public_profile(request: Request, slug: str):
         return TEMPLATES.TemplateResponse(
             request,
             "not_found.html",
-            {"slug": slug, "known_slugs": KNOWN_SLUGS},
+            {"slug": slug, "known_slugs": known_slugs()},
             status_code=404,
         )
     return TEMPLATES.TemplateResponse(

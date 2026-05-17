@@ -71,27 +71,27 @@
     ]
   },
   "milestones": {
-    "title": "Camino",
+    "title": "Camino en claro",
+    "style": "narrative",
+    "kicker": "Cómo acompaño",
     "items": [
       {
-        "when": "Hoy",
         "title": "Consulta individual",
-        "detail": "Sesiones de 50 min · online · enfoque integrativo"
+        "detail": "Sesiones de 50 min · online · enfoque integrativo y humano."
       },
       {
-        "when": "También",
-        "title": "Talleres en grupo pequeño",
-        "detail": "Regulación, presencia y vínculo"
+        "title": "Espacios en grupo",
+        "detail": "Talleres pequeños — regulación, presencia, vínculo."
       },
       {
-        "when": "Formación",
-        "title": "Psicología humanista",
-        "detail": "Bienestar · ética · confidencialidad"
+        "title": "Ética y confidencialidad",
+        "detail": "Formación humanista — cuidado, límites claros, respeto."
       }
     ]
   },
   "projects": {
-    "title": "Espacios",
+    "title": "Lo que ofrezco",
+    "kicker": "Espacios de encuentro",
     "items": [
       {
         "title": "Primera sesión",
@@ -112,7 +112,7 @@
     ]
   },
   "availability": {
-    "title": "Disponibilidad",
+    "title": "Disponible para",
     "items": [
       {
         "label": "Nuevas consultas",
@@ -127,5 +127,5 @@
     ],
     "note": "Escríbeme por WhatsApp — respondo en cuanto pueda."
   },
-  "footer": { "label": "Maavnica Profile · V0" }
+  "footer": { "label": "Maavnica Profile · V0.5" }
 }

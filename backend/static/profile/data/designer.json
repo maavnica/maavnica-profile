@@ -78,27 +78,27 @@
     ]
   },
   "milestones": {
-    "title": "Parcours",
+    "title": "Parcours en clair",
+    "style": "narrative",
+    "kicker": "Ma posture",
     "items": [
       {
-        "when": "2021 — auj.",
-        "title": "Studio indépendant",
-        "detail": "Identités, sites éditoriaux, direction photo"
+        "title": "Donner une forme lisible",
+        "detail": "Identités, édito, interfaces — clarifier avant de décorer."
       },
       {
-        "when": "Avant",
-        "title": "Agence & presse",
-        "detail": "Magazines culture, packaging, campagnes"
+        "title": "Collaborer sans bruit",
+        "detail": "Agence, presse, marques — écoute, système, livrables utilisables."
       },
       {
-        "when": "Approche",
-        "title": "Moins de bruit, plus de sens",
-        "detail": "Recherche, système, livrables utilisables"
+        "title": "Exigence tranquille",
+        "detail": "Typo, détails, cohérence — le soin plutôt que l’effet."
       }
     ]
   },
   "projects": {
-    "title": "Sélection",
+    "title": "Ce que je crée",
+    "kicker": "Réalisations récentes",
     "items": [
       {
         "title": "Maison Érable",
@@ -127,7 +127,7 @@
     ]
   },
   "availability": {
-    "title": "Disponibilités",
+    "title": "Disponible pour",
     "items": [
       {
         "label": "Identité & lancement",
@@ -142,5 +142,5 @@
     ],
     "note": "Un mail avec contexte et timing — réponse sous 48 h."
   },
-  "footer": { "label": "Maavnica Profile · V0" }
+  "footer": { "label": "Maavnica Profile · V0.5" }
 }

@@ -18,6 +18,7 @@ python -m uvicorn backend.app.main:app --reload --port 8090
 | URL | Persona |
 |-----|---------|
 | `/p/arnaud` | Fondateur Maavnica — produit & relation client |
+| `/p/justine` | Assistante polyvalente — accueil & organisation (présence humaine) |
 | `/p/terapeuta` | Thérapeute bien-être (ES, LATAM) |
 | `/p/designer` | Designer freelance |
 | `/p/consultant` | Consultant organisation terrain |
@@ -42,6 +43,8 @@ backend/
 3. Ouvrir `/p/mon-slug`.
 
 Le slug doit correspondre au nom du fichier (`^[a-z0-9-]+$`).
+
+Sections éditoriales (JSON) : `quotes`, `milestones` (style `narrative` sans dates), `signals` (signaux humains), `projects`, `availability`. Titres libres (« Parcours en clair », « Disponible pour », etc.).
 
 ## CTA & liens (V0 démo)
 

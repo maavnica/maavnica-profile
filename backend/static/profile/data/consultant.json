@@ -71,27 +71,27 @@
     ]
   },
   "milestones": {
-    "title": "Parcours",
+    "title": "Parcours en clair",
+    "style": "narrative",
+    "kicker": "Ma façon d’intervenir",
     "items": [
       {
-        "when": "2019 — auj.",
-        "title": "Clarté Terrain",
-        "detail": "PMO léger, ateliers, outillage simple"
+        "title": "Clarifier avant d’organiser",
+        "detail": "Écouter le terrain, nommer les frictions, décider simplement."
       },
       {
-        "when": "Avant",
-        "title": "Ops & qualité",
-        "detail": "Usine, supply, management intermédiaire"
+        "title": "Ops & équipes",
+        "detail": "Usine, supply, management — connaître la réalité du quotidien."
       },
       {
-        "when": "Méthode",
-        "title": "Voir → simplifier → ancrer",
-        "detail": "Pas de transformation « sur le papier »"
+        "title": "Ancrer dans le durable",
+        "detail": "Rituels, outils légers — pas de transformation « sur le papier »."
       }
     ]
   },
   "projects": {
-    "title": "Missions types",
+    "title": "Ce que j’apporte",
+    "kicker": "Formats concrets",
     "items": [
       {
         "title": "Diagnostic express",
@@ -120,7 +120,7 @@
     ]
   },
   "availability": {
-    "title": "Disponibilités",
+    "title": "Disponible pour",
     "items": [
       {
         "label": "Diagnostic & court terme",
@@ -135,5 +135,5 @@
     ],
     "note": "On commence par un échange — je vous dis franchement si je suis la bonne personne."
   },
-  "footer": { "label": "Maavnica Profile · V0" }
+  "footer": { "label": "Maavnica Profile · V0.5" }
 }

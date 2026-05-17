@@ -1,0 +1,114 @@
+{
+  "slug": "justine",
+  "lang": "fr",
+  "meta": {
+    "title": "Justine Vaillard — Présence professionnelle",
+    "description": "Assistante polyvalente à Bassou — accueil, organisation, environnements exigeants et relation de confiance."
+  },
+  "theme": {
+    "id": "rose",
+    "accent": "#c49a8a",
+    "accent_strong": "#e8cfc4",
+    "accent_soft": "rgba(196, 154, 138, 0.15)",
+    "glow": "rgba(196, 154, 138, 0.1)",
+    "glow_warm": "rgba(220, 180, 165, 0.07)",
+    "presence": "rgba(200, 220, 195, 0.88)",
+    "orb_a": "rgba(140, 95, 85, 0.28)",
+    "orb_b": "rgba(90, 110, 100, 0.22)"
+  },
+  "hero": {
+    "eyebrow": "Présence professionnelle · Bassou",
+    "name": "Justine Vaillard",
+    "role": "Assistante polyvalente — accueil, organisation & environnements exigeants",
+    "location": "Bassou, Bourgogne",
+    "tagline": "Je mets de l’ordre et du calme là où ça compte : accueil, suivi des personnes, dossiers et situations sensibles.",
+    "presence": "Ouverte à un échange de 15 minutes",
+    "hints": ["Accueil & relation", "Santé & aide à domicile", "Organisée, à l’écoute"],
+    "portrait": "/static/profile/portraits/justine.svg",
+    "portrait_alt": "Portrait de Justine Vaillard"
+  },
+  "share": {
+    "label": "Partager",
+    "hint": "ce profil",
+    "copied": "Lien copié",
+    "shared": "Profil partagé"
+  },
+  "cta": [
+    {
+      "label": "Écrire",
+      "href": "mailto:contact@maavnica.fr?subject=Contact%20%E2%80%94%20Justine%20Vaillard",
+      "style": "primary"
+    },
+    {
+      "label": "WhatsApp",
+      "href": "https://wa.me/33600000000?text=Bonjour%20Justine%2C%20je%20vous%20contacte%20via%20votre%20profil.",
+      "style": "ghost",
+      "external": true,
+      "title": "WhatsApp (numéro demo V0)"
+    }
+  ],
+  "quotes": {
+    "title": "Ce qu’on retient de moi",
+    "kicker": "Retours terrain",
+    "items": [
+      {
+        "text": "Justine est la personne à qui on confie les dossiers sensibles : discrète, fiable, toujours claire dans ce qu’elle fait.",
+        "name": "Sophie",
+        "context": "responsable accueil, structure de santé"
+      },
+      {
+        "text": "Elle prend le temps d’expliquer, sans juger. On sent qu’elle connaît le terrain et qu’elle s’investit vraiment.",
+        "name": "Marc",
+        "context": "famille accompagnée, aide à domicile"
+      }
+    ]
+  },
+  "milestones": {
+    "title": "Parcours en clair",
+    "style": "narrative",
+    "kicker": "Trois fils qui se croisent",
+    "items": [
+      {
+        "title": "Santé & accompagnement humain",
+        "detail": "Accueil, écoute, situations délicates, respect de la confidentialité."
+      },
+      {
+        "title": "Relation client & organisation",
+        "detail": "Priorités, dossiers, coordination, communication simple et régulière."
+      },
+      {
+        "title": "Outils & autonomie",
+        "detail": "Excel en formation, rédaction soignée, suivi rigoureux du quotidien."
+      }
+    ]
+  },
+  "signals": {
+    "title": "Ma façon de travailler",
+    "kicker": "Ce qui compte au quotidien",
+    "items": [
+      { "label": "Fiable dans le suivi" },
+      { "label": "À l’aise dans les échanges humains" },
+      { "label": "Calme dans les situations sensibles" },
+      { "label": "Organisée sans rigidité" },
+      { "label": "Autonome et concrète" },
+      { "label": "À l’écoute avant de réagir" }
+    ]
+  },
+  "availability": {
+    "title": "Disponible pour",
+    "items": [
+      {
+        "label": "Accueil, secrétariat, coordination",
+        "pill": "Ouvert",
+        "status": "live"
+      },
+      {
+        "label": "Structures santé, commerce, aide à domicile",
+        "pill": "Selon mission",
+        "status": "soon"
+      }
+    ],
+    "note": "Un message suffit pour voir si mon profil correspond à votre besoin."
+  },
+  "footer": { "label": "Maavnica Profile · V0.5" }
+}
