@@ -1,0 +1,139 @@
+{
+  "slug": "consultant",
+  "lang": "fr",
+  "meta": {
+    "title": "Marc Delaunay — Clarté & organisation",
+    "description": "Consultant terrain — simplifier les processus et remettre de l’humain dans l’organisation."
+  },
+  "theme": {
+    "id": "slate",
+    "accent": "#8a9cad",
+    "accent_strong": "#c2d0de",
+    "accent_soft": "rgba(138, 156, 173, 0.14)",
+    "glow": "rgba(138, 156, 173, 0.1)",
+    "glow_warm": "rgba(150, 170, 190, 0.06)",
+    "presence": "rgba(160, 195, 220, 0.88)",
+    "orb_a": "rgba(70, 90, 110, 0.3)",
+    "orb_b": "rgba(90, 100, 120, 0.22)"
+  },
+  "hero": {
+    "eyebrow": "Organisation humaine · terrain",
+    "name": "Marc Delaunay",
+    "role": "Consultant — clarté, processus & équipes sur le terrain",
+    "location": "Nantes · interventions en France",
+    "tagline": "Je simplifie ce qui coince : réunions, outils, responsabilités — pour que les équipes retrouvent du temps utile.",
+    "presence": "Premier échange offert (45 min)",
+    "hints": ["Processus concrets", "Peu de slides", "Terrain d’abord"],
+    "portrait": "/static/profile/portraits/consultant.svg",
+    "portrait_alt": "Portrait de Marc Delaunay"
+  },
+  "share": {
+    "label": "Partager",
+    "hint": "ce profil",
+    "copied": "Lien copié",
+    "shared": "Profil partagé"
+  },
+  "cta": [
+    {
+      "label": "Écrire",
+      "href": "mailto:contact@maavnica.fr?subject=Diagnostic%20demo%20%E2%80%94%20Marc%20Delaunay",
+      "style": "primary"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/",
+      "style": "ghost",
+      "external": true,
+      "title": "LinkedIn (demo V0)"
+    },
+    {
+      "label": "WhatsApp",
+      "href": "https://wa.me/33600000000?text=Bonjour%20Marc%2C%20je%20vous%20contacte%20via%20votre%20profil.",
+      "style": "ghost",
+      "external": true,
+      "title": "WhatsApp (numéro demo V0)"
+    }
+  ],
+  "quotes": {
+    "title": "En confiance",
+    "kicker": "Terrain & équipes",
+    "items": [
+      {
+        "text": "Marc arrive, écoute, et en deux jours on comprend enfin pourquoi tout le monde se marchait dessus. Pas de jargon — des décisions.",
+        "name": "Isabelle",
+        "context": "directrice opérations, logistique"
+      },
+      {
+        "text": "Il a réduit nos réunions d’environ un tiers sans perdre l’essentiel. L’équipe respire.",
+        "name": "Karim",
+        "context": "responsable de site industriel"
+      }
+    ]
+  },
+  "milestones": {
+    "title": "Parcours",
+    "items": [
+      {
+        "when": "2019 — auj.",
+        "title": "Clarté Terrain",
+        "detail": "PMO léger, ateliers, outillage simple"
+      },
+      {
+        "when": "Avant",
+        "title": "Ops & qualité",
+        "detail": "Usine, supply, management intermédiaire"
+      },
+      {
+        "when": "Méthode",
+        "title": "Voir → simplifier → ancrer",
+        "detail": "Pas de transformation « sur le papier »"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Missions types",
+    "items": [
+      {
+        "title": "Diagnostic express",
+        "description": "Cartographie des frictions — restitution en 48 h, plan d’actions réaliste.",
+        "chips": [
+          { "label": "Mission", "variant": "product" },
+          { "label": "2–3 j", "variant": "muted" }
+        ]
+      },
+      {
+        "title": "Rituels d’équipe",
+        "description": "Refonte des synchros : qui décide, qui informe, qui exécute.",
+        "chips": [
+          { "label": "Process", "variant": "product" },
+          { "label": "Équipe", "variant": "muted" }
+        ]
+      },
+      {
+        "title": "Outils sur mesure",
+        "description": "Tableaux simples, adaptés au terrain — sans usine à gaz.",
+        "chips": [
+          { "label": "Outil", "variant": "product" },
+          { "label": "Pragmatique", "variant": "muted" }
+        ]
+      }
+    ]
+  },
+  "availability": {
+    "title": "Disponibilités",
+    "items": [
+      {
+        "label": "Diagnostic & court terme",
+        "pill": "Ouvert",
+        "status": "live"
+      },
+      {
+        "label": "Accompagnement 3 mois",
+        "pill": "Sur devis",
+        "status": "soon"
+      }
+    ],
+    "note": "On commence par un échange — je vous dis franchement si je suis la bonne personne."
+  },
+  "footer": { "label": "Maavnica Profile · V0" }
+}

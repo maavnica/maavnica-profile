@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ce profil n’existe pas encore — Maavnica Profile." />
+    <title>Profil introuvable</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500&family=Fraunces:ital,opsz,wght@0,9..144,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/profile/style.css" />
+  </head>
+  <body class="profile-page theme-warm not-found-page">
+    <div class="bg-orbs" aria-hidden="true">
+      <span class="orb orb--a"></span>
+      <span class="orb orb--b"></span>
+    </div>
+
+    <div class="not-found sheet">
+      <p class="eyebrow">Maavnica Profile</p>
+      <h1 class="not-found__title">Ce profil n’est pas encore là</h1>
+      <p class="not-found__text subtle">
+        {% if slug %}
+        <strong>/p/{{ slug }}</strong> n’existe pas pour l’instant — peut-être une faute de frappe,
+        ou un lien pas encore publié.
+        {% else %}
+        Ce lien ne mène à aucun profil pour l’instant.
+        {% endif %}
+      </p>
+      <p class="not-found__text">
+        En attendant, voici des profils démo — même format, métiers différents.
+      </p>
+
+      <ul class="not-found__list">
+        {% for s in known_slugs %}
+        <li>
+          <a class="not-found__link" href="/p/{{ s }}">/p/{{ s }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <a class="btn btn--primary" href="/p/arnaud">Voir un exemple — Arnaud</a>
+    </div>
+  </body>
+</html>

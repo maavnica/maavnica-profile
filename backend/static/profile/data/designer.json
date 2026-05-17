@@ -1,0 +1,146 @@
+{
+  "slug": "designer",
+  "lang": "fr",
+  "meta": {
+    "title": "Léa Moreau — Direction visuelle",
+    "description": "Designer freelance — identité, direction artistique et collaborations éditoriales."
+  },
+  "theme": {
+    "id": "violet",
+    "accent": "#a894d4",
+    "accent_strong": "#d4c8f0",
+    "accent_soft": "rgba(168, 148, 212, 0.15)",
+    "glow": "rgba(168, 148, 212, 0.11)",
+    "glow_warm": "rgba(180, 160, 220, 0.07)",
+    "presence": "rgba(190, 175, 230, 0.88)",
+    "orb_a": "rgba(100, 80, 140, 0.32)",
+    "orb_b": "rgba(70, 90, 120, 0.24)"
+  },
+  "hero": {
+    "eyebrow": "Portfolio vivant · collaborations",
+    "name": "Léa Moreau",
+    "role": "Designer freelance · direction artistique & identité",
+    "location": "Lyon · à distance en Europe",
+    "tagline": "Je donne une forme claire à ce qui compte — marque, édito, interfaces — avec exigence et sens du détail.",
+    "presence": "Ouverte aux projets du trimestre",
+    "hints": ["Identité & édito", "À distance", "Processus transparent"],
+    "portrait": "/static/profile/portraits/designer.svg",
+    "portrait_alt": "Portrait de Léa Moreau"
+  },
+  "share": {
+    "label": "Partager",
+    "hint": "ce profil",
+    "copied": "Lien copié",
+    "shared": "Profil partagé"
+  },
+  "cta": [
+    {
+      "label": "Écrire",
+      "href": "mailto:contact@maavnica.fr?subject=Projet%20demo%20%E2%80%94%20L%C3%A9a%20Moreau",
+      "style": "primary"
+    },
+    {
+      "label": "Behance",
+      "href": "https://www.behance.net/",
+      "style": "ghost",
+      "external": true,
+      "title": "Behance (demo V0)"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/",
+      "style": "ghost",
+      "external": true,
+      "title": "LinkedIn (demo V0)"
+    },
+    {
+      "label": "Voir le book",
+      "href": "/static/profile/cv-placeholder.pdf",
+      "style": "quiet",
+      "download": true,
+      "title": "Book PDF de démonstration"
+    }
+  ],
+  "quotes": {
+    "title": "Collaborations",
+    "kicker": "Retours clients",
+    "items": [
+      {
+        "text": "Léa a capté l’esprit de la marque sans nous noyer dans des moodboards interminables. Livraison nette, équipe rassurée.",
+        "name": "Julien",
+        "context": "fondateur, marque lifestyle"
+      },
+      {
+        "text": "Précise, disponible, exigeante sur la typo — exactement ce qu’il nous fallait pour le lancement presse.",
+        "name": "Nadia",
+        "context": "directrice communication"
+      }
+    ]
+  },
+  "milestones": {
+    "title": "Parcours",
+    "items": [
+      {
+        "when": "2021 — auj.",
+        "title": "Studio indépendant",
+        "detail": "Identités, sites éditoriaux, direction photo"
+      },
+      {
+        "when": "Avant",
+        "title": "Agence & presse",
+        "detail": "Magazines culture, packaging, campagnes"
+      },
+      {
+        "when": "Approche",
+        "title": "Moins de bruit, plus de sens",
+        "detail": "Recherche, système, livrables utilisables"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Sélection",
+    "items": [
+      {
+        "title": "Maison Érable",
+        "description": "Identité — logo, palette, guidelines, templates réseaux.",
+        "chips": [
+          { "label": "Identité", "variant": "product" },
+          { "label": "2025", "variant": "muted" }
+        ]
+      },
+      {
+        "title": "Revue Cordiale",
+        "description": "Direction éditoriale — grilles, typographie, couvertures.",
+        "chips": [
+          { "label": "Édito", "variant": "product" },
+          { "label": "Print", "variant": "muted" }
+        ]
+      },
+      {
+        "title": "App Atelier",
+        "description": "Interface sobre pour artisans — parcours commande simplifié.",
+        "chips": [
+          { "label": "UI", "variant": "product" },
+          { "label": "Produit", "variant": "muted" }
+        ]
+      }
+    ]
+  },
+  "availability": {
+    "title": "Disponibilités",
+    "items": [
+      {
+        "label": "Identité & lancement",
+        "pill": "1 créneau",
+        "status": "soon"
+      },
+      {
+        "label": "Mission courte (2–4 sem.)",
+        "pill": "Ouvert",
+        "status": "live"
+      }
+    ],
+    "note": "Un mail avec contexte et timing — réponse sous 48 h."
+  },
+  "footer": { "label": "Maavnica Profile · V0" }
+}

@@ -1,0 +1,154 @@
+{
+  "slug": "arnaud",
+  "lang": "fr",
+  "meta": {
+    "title": "Arnaud Petitjean-Huard — Profil",
+    "description": "Fondateur Maavnica — relation client, produit digital et outils terrain à Auxerre."
+  },
+  "theme": {
+    "id": "warm",
+    "accent": "#c4a06a",
+    "accent_strong": "#e6d2a8",
+    "accent_soft": "rgba(196, 160, 106, 0.14)",
+    "glow": "rgba(196, 160, 106, 0.1)",
+    "glow_warm": "rgba(220, 180, 130, 0.07)",
+    "presence": "rgba(143, 210, 175, 0.88)",
+    "orb_a": "rgba(120, 90, 70, 0.35)",
+    "orb_b": "rgba(70, 85, 90, 0.28)"
+  },
+  "hero": {
+    "eyebrow": "Maavnica · une présence, pas un CV",
+    "name": "Arnaud Petitjean-Huard",
+    "role": "Relation client, produit digital & automatisation utile",
+    "location": "Auxerre, Bourgogne",
+    "tagline": "Je conçois des outils simples pour les pros — SmartCard, PayLink, profils vivants — avec une écoute réelle du terrain.",
+    "presence": "Disponible pour échanges sérieux",
+    "hints": ["Basé à Auxerre", "Produit terrain", "Réponse directe"],
+    "portrait": "/static/profile/portraits/arnaud.svg",
+    "portrait_alt": "Portrait d’Arnaud Petitjean-Huard"
+  },
+  "share": {
+    "label": "Partager",
+    "hint": "ce profil",
+    "copied": "Lien copié",
+    "shared": "Profil partagé"
+  },
+  "cta": [
+    {
+      "label": "Écrire",
+      "href": "mailto:contact@maavnica.fr?subject=Contact%20%E2%80%94%20Arnaud%20Petitjean-Huard",
+      "style": "primary"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/",
+      "style": "ghost",
+      "external": true,
+      "title": "LinkedIn (démo V0)"
+    },
+    {
+      "label": "WhatsApp",
+      "href": "https://wa.me/33600000000?text=Bonjour%20Arnaud%2C%20je%20vous%20contacte%20via%20votre%20profil.",
+      "style": "ghost",
+      "external": true,
+      "title": "WhatsApp (numéro démo V0)"
+    },
+    {
+      "label": "Voir le CV",
+      "href": "/static/profile/cv-placeholder.pdf",
+      "style": "quiet",
+      "download": true,
+      "title": "CV PDF de démonstration"
+    }
+  ],
+  "quotes": {
+    "title": "En confiance",
+    "kicker": "Retours de terrain",
+    "items": [
+      {
+        "text": "Il reformule vite ce qu’on a en tête et transforme ça en outil concret. On gagne du temps, sans jargon inutile.",
+        "name": "Camille",
+        "context": "gérante, services BTP"
+      },
+      {
+        "text": "Très à l’écoute, calme, précis. Il sait quand simplifier et quand creuser un détail — sans nous noyer.",
+        "name": "Thomas",
+        "context": "indépendant, conseil digital"
+      }
+    ]
+  },
+  "milestones": {
+    "title": "Parcours",
+    "items": [
+      {
+        "when": "2023 — auj.",
+        "title": "Maavnica",
+        "detail": "SmartCard, PayLink, profils vivants, automatisation légère"
+      },
+      {
+        "when": "Avant",
+        "title": "Relation client & outils métiers",
+        "detail": "CRM, suivi client, processus terrain"
+      },
+      {
+        "when": "Fil conducteur",
+        "title": "Produit utile, pas gadget",
+        "detail": "Écoute, clarté, déploiement progressif"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projets",
+    "items": [
+      {
+        "title": "SmartCard",
+        "description": "Carte pro partageable — contact, liens, présence sur le terrain.",
+        "chips": [
+          { "label": "Produit", "variant": "product" },
+          { "label": "NFC", "variant": "muted" }
+        ]
+      },
+      {
+        "title": "PayLink",
+        "description": "Liens de paiement simples pour indépendants et petites structures.",
+        "chips": [
+          { "label": "Produit", "variant": "product" },
+          { "label": "Paiement", "variant": "muted" }
+        ]
+      },
+      {
+        "title": "Maavnica Profile",
+        "description": "Profil vivant — lisible en quelques secondes, partageable en un lien.",
+        "chips": [
+          { "label": "Identité", "variant": "product" },
+          { "label": "Partage", "variant": "muted" }
+        ]
+      },
+      {
+        "title": "CRM terrain",
+        "description": "Suivi client pensé pour ceux qui bougent, pas pour les open spaces.",
+        "chips": [
+          { "label": "Outil", "variant": "product" },
+          { "label": "CRM", "variant": "muted" }
+        ]
+      }
+    ]
+  },
+  "availability": {
+    "title": "Disponibilités",
+    "items": [
+      {
+        "label": "Échange produit & partenariats",
+        "pill": "Ouvert",
+        "status": "live"
+      },
+      {
+        "label": "Accompagnement ponctuel",
+        "pill": "Sur créneaux",
+        "status": "soon"
+      }
+    ],
+    "note": "Un message suffit pour voir si on avance ensemble."
+  },
+  "footer": { "label": "Maavnica Profile · V0" }
+}

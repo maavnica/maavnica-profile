@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="{{ profile.lang | default('fr') }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ profile.meta.description }}" />
+    <title>{{ profile.meta.title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,450;0,9..144,500;1,9..144,450&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/profile/style.css" />
+  </head>
+  <body
+    class="profile-page theme-{{ profile.theme.id }}"
+    style="--accent: {{ profile.theme.accent }}; --accent-strong: {{ profile.theme.accent_strong }}; --accent-soft: {{ profile.theme.accent_soft }}; --glow: {{ profile.theme.glow }}; --glow-warm: {{ profile.theme.glow_warm }}; --presence: {{ profile.theme.presence }}; --orb-a-color: {{ profile.theme.orb_a }}; --orb-b-color: {{ profile.theme.orb_b }};"
+  >
+    <a class="skip-link" href="#contenu-principal">Aller au contenu</a>
+
+    <div class="bg-orbs" aria-hidden="true">
+      <span class="orb orb--a"></span>
+      <span class="orb orb--b"></span>
+    </div>
+
+    <div class="profile sheet" id="top">
+      <header class="hero card">
+        <div class="hero__grid">
+          <div class="hero__identity">
+            <div class="avatar">
+              <img
+                class="avatar__img"
+                src="{{ profile.hero.portrait }}"
+                alt="{{ profile.hero.portrait_alt }}"
+                width="56"
+                height="56"
+                decoding="async"
+              />
+            </div>
+            <div class="hero__copy">
+              <p class="eyebrow">{{ profile.hero.eyebrow }}</p>
+              <h1 class="name">{{ profile.hero.name }}</h1>
+              <p class="role">{{ profile.hero.role }}</p>
+              <p class="location">
+                <span class="location__dot" aria-hidden="true"></span>
+                {{ profile.hero.location }}
+              </p>
+              <p class="tagline">{{ profile.hero.tagline }}</p>
+              {% if profile.hero.presence %}
+              <p class="hero__presence">{{ profile.hero.presence }}</p>
+              {% endif %}
+              {% if profile.hero.hints %}
+              <ul class="human-hints" aria-label="En bref">
+                {% for hint in profile.hero.hints %}
+                <li>{{ hint }}</li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+            </div>
+          </div>
+
+          <div class="hero__share">
+            <button
+              type="button"
+              class="share-card js-share"
+              aria-label="{{ profile.share.label | default('Partager') }} ce profil"
+              data-share-default="{{ profile.share.hint }}"
+              data-share-copied="{{ profile.share.copied | default('Lien copié') }}"
+              data-share-shared="{{ profile.share.shared | default('Profil partagé') }}"
+            >
+              <svg class="share-card__glyph" viewBox="0 0 96 96" aria-hidden="true">
+                <rect width="96" height="96" rx="14" />
+                <rect x="14" y="14" width="22" height="22" rx="5" />
+                <rect x="33" y="33" width="12" height="12" rx="3" />
+                <rect x="60" y="14" width="22" height="22" rx="5" />
+                <rect x="49" y="48" width="10" height="10" rx="2" />
+                <rect x="71" y="48" width="11" height="11" rx="2" />
+                <rect x="14" y="60" width="22" height="22" rx="5" />
+                <rect x="72" y="72" width="10" height="10" rx="2" />
+              </svg>
+              <span class="share-card__copy">
+                <span class="share-card__title">{{ profile.share.label | default('Partager') }}</span>
+                <span class="share-card__hint js-share-hint">{{ profile.share.hint }}</span>
+              </span>
+            </button>
+            <span class="visually-hidden" aria-live="polite" id="share-status"></span>
+          </div>
+
+          <div class="hero__actions actions" role="group" aria-label="Actions rapides">
+            {% for link in profile.cta %}
+            <a
+              class="btn btn--{{ link.style }} js-track"
+              href="{{ link.href }}"
+              {% if link.external %}target="_blank" rel="noopener noreferrer"{% endif %}
+              {% if link.download %}download{% endif %}
+              {% if link.title %}title="{{ link.title }}"{% endif %}
+              >{{ link.label }}</a
+            >
+            {% endfor %}
+          </div>
+        </div>
+      </header>
+
+      <main id="contenu-principal" class="dashboard">
+        <div class="dashboard__row">
+          <section class="panel card" aria-labelledby="reco-title">
+            <header class="panel__head">
+              <div class="panel__head-row">
+                <h2 id="reco-title">{{ profile.quotes.title }}</h2>
+                {% if profile.quotes.kicker %}
+                <span class="panel__kicker">{{ profile.quotes.kicker }}</span>
+                {% endif %}
+              </div>
+            </header>
+            <ul class="quotes">
+              {% for q in profile.quotes['items'] %}
+              <li class="quote">
+                <p class="quote__text">{{ q.text }}</p>
+                <footer class="quote__foot">
+                  <cite class="quote__name">{{ q.name }}</cite>
+                  <span class="quote__ctx">{{ q.context }}</span>
+                </footer>
+              </li>
+              {% endfor %}
+            </ul>
+          </section>
+
+          <section class="panel card" aria-labelledby="parcours-title">
+            <header class="panel__head">
+              <h2 id="parcours-title">{{ profile.milestones.title }}</h2>
+            </header>
+            <ol class="milestones">
+              {% for m in profile.milestones['items'] %}
+              <li class="milestone">
+                <span class="milestone__when">{{ m.when }}</span>
+                <div class="milestone__body">
+                  <strong>{{ m.title }}</strong>
+                  <span class="milestone__detail subtle">{{ m.detail }}</span>
+                </div>
+              </li>
+              {% endfor %}
+            </ol>
+          </section>
+        </div>
+
+        <div class="dashboard__row">
+          <section class="panel card" aria-labelledby="projets-title">
+            <header class="panel__head">
+              <h2 id="projets-title">{{ profile.projects.title }}</h2>
+            </header>
+            <div class="capsules">
+              {% for p in profile.projects['items'] %}
+              <article class="capsule">
+                <div class="capsule__top">
+                  {% for chip in p.chips %}
+                  <span class="chip chip--{{ chip.variant }}">{{ chip.label }}</span>
+                  {% endfor %}
+                </div>
+                <h3>{{ p.title }}</h3>
+                <p class="capsule__desc subtle">{{ p.description }}</p>
+              </article>
+              {% endfor %}
+            </div>
+          </section>
+
+          <section class="panel card" aria-labelledby="dispo-title">
+            <header class="panel__head">
+              <h2 id="dispo-title">{{ profile.availability.title }}</h2>
+            </header>
+            <ul class="dispo">
+              {% for d in profile.availability['items'] %}
+              <li>
+                <span class="dispo__label">{{ d.label }}</span>
+                <span class="pill pill--{{ d.status }}">{{ d.pill }}</span>
+              </li>
+              {% endfor %}
+            </ul>
+            {% if profile.availability.note %}
+            <p class="dispo__note subtle">{{ profile.availability.note }}</p>
+            {% endif %}
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p class="subtle">{{ profile.footer.label }}</p>
+        <a class="footer__top js-track subtle" href="#top">Haut</a>
+      </footer>
+    </div>
+
+    <script src="/static/profile/app.js" defer></script>
+  </body>
+</html>

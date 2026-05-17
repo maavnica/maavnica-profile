@@ -1,0 +1,131 @@
+{
+  "slug": "terapeuta",
+  "lang": "es",
+  "meta": {
+    "title": "Valentina Morales — Acompañamiento",
+    "description": "Terapeuta de bienestar — espacio seguro, presencia humana y contacto directo por WhatsApp."
+  },
+  "theme": {
+    "id": "sage",
+    "accent": "#8fb9a0",
+    "accent_strong": "#c5e4d0",
+    "accent_soft": "rgba(143, 185, 160, 0.16)",
+    "glow": "rgba(143, 185, 160, 0.12)",
+    "glow_warm": "rgba(160, 200, 175, 0.08)",
+    "presence": "rgba(180, 220, 195, 0.9)",
+    "orb_a": "rgba(80, 120, 95, 0.32)",
+    "orb_b": "rgba(60, 90, 110, 0.22)"
+  },
+  "hero": {
+    "eyebrow": "Presencia tranquila · perfil compartible",
+    "name": "Valentina Morales",
+    "role": "Terapeuta de bienestar · acompañamiento consciente",
+    "location": "Buenos Aires · consultas online en LATAM",
+    "tagline": "Un espacio para bajar el ritmo, nombrar lo que pesa y avanzar con cuidado — sin fórmulas vacías.",
+    "presence": "Primera conversación sin compromiso",
+    "hints": ["Sesiones online", "Español y portugués", "WhatsApp directo"],
+    "portrait": "/static/profile/portraits/terapeuta.svg",
+    "portrait_alt": "Retrato de Valentina Morales"
+  },
+  "share": {
+    "label": "Compartir",
+    "hint": "este perfil",
+    "copied": "Enlace copiado",
+    "shared": "Perfil compartido"
+  },
+  "cta": [
+    {
+      "label": "WhatsApp",
+      "href": "https://wa.me/5491100000000?text=Hola%20Valentina%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20una%20consulta.",
+      "style": "primary",
+      "external": true,
+      "title": "WhatsApp (número demo V0)"
+    },
+    {
+      "label": "Escribir",
+      "href": "mailto:contact@maavnica.fr?subject=Consulta%20demo%20%E2%80%94%20Valentina",
+      "style": "ghost"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/",
+      "style": "ghost",
+      "external": true,
+      "title": "Instagram (demo V0)"
+    }
+  ],
+  "quotes": {
+    "title": "En confianza",
+    "kicker": "Quienes pasaron por aquí",
+    "items": [
+      {
+        "text": "Valentina escucha de verdad. No sentí que me vendiera nada — por fin pude respirar y ordenar lo que me pasaba.",
+        "name": "Lucía",
+        "context": "consulta online, México"
+      },
+      {
+        "text": "Su tono es suave pero claro. Me ayudó a poner límites sin culpa, paso a paso.",
+        "name": "Andrés",
+        "context": "acompañamiento, Colombia"
+      }
+    ]
+  },
+  "milestones": {
+    "title": "Camino",
+    "items": [
+      {
+        "when": "Hoy",
+        "title": "Consulta individual",
+        "detail": "Sesiones de 50 min · online · enfoque integrativo"
+      },
+      {
+        "when": "También",
+        "title": "Talleres en grupo pequeño",
+        "detail": "Regulación, presencia y vínculo"
+      },
+      {
+        "when": "Formación",
+        "title": "Psicología humanista",
+        "detail": "Bienestar · ética · confidencialidad"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Espacios",
+    "items": [
+      {
+        "title": "Primera sesión",
+        "description": "Conocernos, definir qué necesitas y si conectamos bien.",
+        "chips": [
+          { "label": "Acompañamiento", "variant": "product" },
+          { "label": "Online", "variant": "muted" }
+        ]
+      },
+      {
+        "title": "Proceso de 4 semanas",
+        "description": "Cuatro encuentros para sostener un cambio concreto, con suavidad.",
+        "chips": [
+          { "label": "Proceso", "variant": "product" },
+          { "label": "4 semanas", "variant": "muted" }
+        ]
+      }
+    ]
+  },
+  "availability": {
+    "title": "Disponibilidad",
+    "items": [
+      {
+        "label": "Nuevas consultas",
+        "pill": "Abierto",
+        "status": "live"
+      },
+      {
+        "label": "Tardes (hora Argentina)",
+        "pill": "Mar · jue",
+        "status": "soon"
+      }
+    ],
+    "note": "Escríbeme por WhatsApp — respondo en cuanto pueda."
+  },
+  "footer": { "label": "Maavnica Profile · V0" }
+}
