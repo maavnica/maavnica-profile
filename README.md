@@ -32,7 +32,8 @@ backend/
     templates/           # SSR Jinja2
   static/profile/
     data/*.json          # Un fichier par slug
-    portraits/           # SVG portraits
+    portraits/           # SVG + photos (ex. justine.jpg)
+    cv/                  # CV HTML/CSS + PDF (Justine)
     style.css, app.js
 ```
 
@@ -50,7 +51,30 @@ Sections éditoriales (JSON) : `quotes`, `milestones` (style `narrative` sans da
 
 - **E-mail** : `contact@maavnica.fr` (mailto fonctionnel).
 - **WhatsApp / LinkedIn / Instagram / Behance** : liens de démonstration (info-bulle `title` sur les boutons concernés).
-- **CV / book** : `cv-placeholder.pdf` (PDF minimal de démo).
+- **CV / book** : `cv-placeholder.pdf` (PDF minimal de démo) ; profil **Justine** : CV dédié (voir ci-dessous).
+
+## Profil Justine (V0.6) — photo & CV
+
+Exemple complet : profil vivant sur `/p/justine`, CV en complément.
+
+### Photo
+
+1. Déposer la vraie photo (JPEG ou PNG) sous :
+   `backend/static/profile/portraits/justine.jpg`
+   (ou mettre à jour le champ `hero.portrait` dans `data/justine.json`).
+2. Tant que le fichier est absent ou invalide, le navigateur bascule sur le fallback SVG :
+   `portraits/justine-photo.svg` (via `portrait_fallback` dans le JSON).
+
+### CV PDF
+
+1. Ouvrir dans le navigateur (serveur local lancé) :
+   [http://127.0.0.1:8090/static/profile/cv/justine-vaillard-cv.html](http://127.0.0.1:8090/static/profile/cv/justine-vaillard-cv.html)
+2. **Imprimer** → **Enregistrer au format PDF** (format A4, marges par défaut ou minimales).
+3. Remplacer le fichier :
+   `backend/static/profile/cv/justine-vaillard-cv.pdf`
+
+Le bouton **Voir le CV** du profil pointe vers ce PDF. Source HTML + styles :
+`backend/static/profile/cv/justine-vaillard-cv.html` et `cv-style.css`.
 
 ## Déploiement Render
 

@@ -7,6 +7,15 @@
     });
   });
 
+  document.querySelectorAll(".avatar__img[data-fallback]").forEach(function (img) {
+    img.addEventListener("error", function () {
+      var fallback = img.getAttribute("data-fallback");
+      if (fallback && img.src.indexOf(fallback) === -1) {
+        img.src = fallback;
+      }
+    });
+  });
+
   var shareBtn = document.querySelector(".js-share");
   if (!shareBtn) return;
 

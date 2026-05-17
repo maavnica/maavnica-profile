@@ -1,0 +1,243 @@
+:root {
+  --ink: #2c2824;
+  --muted: #5c554e;
+  --soft: #7a726a;
+  --paper: #faf7f2;
+  --paper-2: #f3ede4;
+  --accent: #6d8f7a;
+  --accent-soft: #e8f0ea;
+  --warm: #c49a8a;
+  --line: rgba(44, 40, 36, 0.12);
+  --font: "Segoe UI", "DM Sans", system-ui, sans-serif;
+  --font-display: Georgia, "Times New Roman", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 11pt;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.45;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.cv {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 14mm 16mm 12mm;
+  background: var(--paper);
+}
+
+.cv-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem 1.5rem;
+  align-items: start;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.cv-header h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.cv-role {
+  margin: 0.25rem 0 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.cv-meta {
+  margin: 0.5rem 0 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.cv-meta a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.cv-tagline {
+  margin: 0.65rem 0 0;
+  max-width: 42ch;
+  font-size: 0.88rem;
+  color: var(--soft);
+  line-height: 1.4;
+}
+
+.cv-back {
+  font-size: 0.72rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.cv-back a {
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+
+.section {
+  margin-bottom: 0.95rem;
+  break-inside: avoid;
+}
+
+.section h2 {
+  margin: 0 0 0.45rem;
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+
+.section p {
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--soft);
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.45rem;
+}
+
+.pill {
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.22rem 0.5rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--ink);
+  border: 1px solid rgba(109, 143, 122, 0.2);
+}
+
+.axes {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.35rem;
+}
+
+.axis {
+  padding: 0.5rem 0.6rem;
+  background: var(--paper-2);
+  border-radius: 6px;
+  border: 1px solid var(--line);
+}
+
+.axis strong {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.15rem;
+}
+
+.axis p {
+  font-size: 0.76rem;
+  line-height: 1.38;
+}
+
+.jobs {
+  margin: 0.35rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.jobs li {
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed var(--line);
+  font-size: 0.78rem;
+}
+
+.jobs li:last-child {
+  border-bottom: 0;
+}
+
+.jobs strong {
+  font-size: 0.8rem;
+}
+
+.jobs span {
+  color: var(--muted);
+}
+
+.edu {
+  margin: 0.35rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.edu li {
+  font-size: 0.76rem;
+  padding: 0.28rem 0;
+  color: var(--soft);
+}
+
+.edu strong {
+  color: var(--ink);
+}
+
+.cv-footer {
+  margin-top: 1rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.68rem;
+  color: var(--muted);
+}
+
+.cv-footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm 14mm;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  .cv {
+    max-width: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cv-back {
+    font-size: 0.65rem;
+  }
+
+  .section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  a {
+    color: var(--ink) !important;
+  }
+}

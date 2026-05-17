@@ -28,7 +28,7 @@
       <header class="hero card">
         <div class="hero__grid">
           <div class="hero__identity">
-            <div class="avatar">
+            <div class="avatar{% if profile.hero.portrait_fallback %} avatar--photo{% elif '.jpg' in profile.hero.portrait or '.jpeg' in profile.hero.portrait or '.png' in profile.hero.portrait or '.webp' in profile.hero.portrait %} avatar--photo{% endif %}">
               <img
                 class="avatar__img"
                 src="{{ profile.hero.portrait }}"
@@ -36,6 +36,7 @@
                 width="56"
                 height="56"
                 decoding="async"
+                {% if profile.hero.portrait_fallback %}data-fallback="{{ profile.hero.portrait_fallback }}"{% endif %}
               />
             </div>
             <div class="hero__copy">

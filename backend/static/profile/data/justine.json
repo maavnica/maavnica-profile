@@ -3,7 +3,7 @@
   "lang": "fr",
   "meta": {
     "title": "Justine Vaillard — Présence professionnelle",
-    "description": "Assistante polyvalente à Bassou — accueil, organisation, environnements exigeants et relation de confiance."
+    "description": "Assistante polyvalente à Bassou — accueil, organisation, environnements exigeants. Profil vivant, CV disponible."
   },
   "theme": {
     "id": "rose",
@@ -17,15 +17,16 @@
     "orb_b": "rgba(90, 110, 100, 0.22)"
   },
   "hero": {
-    "eyebrow": "Présence professionnelle · Bassou",
+    "eyebrow": "Profil vivant · CV disponible",
     "name": "Justine Vaillard",
     "role": "Assistante polyvalente — accueil, organisation & environnements exigeants",
     "location": "Bassou, Bourgogne",
     "tagline": "Je mets de l’ordre et du calme là où ça compte : accueil, suivi des personnes, dossiers et situations sensibles.",
     "presence": "Ouverte à un échange de 15 minutes",
     "hints": ["Accueil & relation", "Santé & aide à domicile", "Organisée, à l’écoute"],
-    "portrait": "/static/profile/portraits/justine.svg",
-    "portrait_alt": "Portrait de Justine Vaillard"
+    "portrait": "/static/profile/portraits/justine.jpg",
+    "portrait_fallback": "/static/profile/portraits/justine-photo.svg",
+    "portrait_alt": "Photo de Justine Vaillard"
   },
   "share": {
     "label": "Partager",
@@ -44,7 +45,14 @@
       "href": "https://wa.me/33600000000?text=Bonjour%20Justine%2C%20je%20vous%20contacte%20via%20votre%20profil.",
       "style": "ghost",
       "external": true,
-      "title": "WhatsApp (numéro demo V0)"
+      "title": "WhatsApp (numéro démo V0)"
+    },
+    {
+      "label": "Voir le CV",
+      "href": "/static/profile/cv/justine-vaillard-cv.pdf",
+      "style": "quiet",
+      "download": true,
+      "title": "CV PDF — version détaillée"
     }
   ],
   "quotes": {
@@ -108,7 +116,7 @@
         "status": "soon"
       }
     ],
-    "note": "Un message suffit pour voir si mon profil correspond à votre besoin."
+    "note": "Le profil pour une vue rapide — le CV pour le détail. Un message suffit pour échanger."
   },
-  "footer": { "label": "Maavnica Profile · V0.5" }
+  "footer": { "label": "Maavnica Profile · V0.6" }
 }

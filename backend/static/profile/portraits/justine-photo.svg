@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none" role="img" aria-label="Photo">
+  <defs>
+    <linearGradient id="bg" x1="20" y1="10" x2="100" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2a2422"/>
+      <stop offset="1" stop-color="#141210"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="38" y1="32" x2="82" y2="92" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e8d0bc"/>
+      <stop offset="1" stop-color="#b88878"/>
+    </linearGradient>
+    <radialGradient id="light" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(46 38) scale(44)">
+      <stop stop-color="#fff" stop-opacity="0.16"/>
+      <stop offset="1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="120" height="120" rx="60" fill="url(#bg)"/>
+  <ellipse cx="60" cy="40" rx="30" ry="22" fill="url(#light)"/>
+  <path d="M35 54c0-16 11-26 25-26s25 10 25 26c0 14-3 32-25 32S35 68 35 54z" fill="url(#skin)"/>
+  <path d="M33 50c1-12 11-20 27-20s26 8 27 20c-7-5-15-8-27-8s-20 3-27 8z" fill="#3d322c"/>
+  <path d="M24 98c8-18 24-30 36-30s28 12 36 30" fill="#252228"/>
+  <path d="M52 62c2.5 3 7 4.5 12 4.5s9.5-1.5 12-4.5" stroke="#8a6a58" stroke-width="1" stroke-linecap="round" opacity="0.35"/>
+</svg>
